@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hotel Room Booking</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+      .confirmation-message {
+        display: none;
+        text-align: center;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+
+      .confirmation-message h2 {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hotel Room Booking</h1>
+
+    <form id="bookingForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="check-in">Check-in Date:</label>
+      <input type="date" id="check-in" name="check-in" required /><br />
+
+      <label for="check-out">Check-out Date:</label>
+      <input type="date" id="check-out" name="check-out" required /><br />
+
+      <label for="email">email:</label>
+      <input type="text" id="email" name="email" required /><br />
+
+      <label for="no_telp">no_telp:</label>
+      <input type="number" id="no_telp" name="no_telp" required /><br />
+
+      <input type="submit" value="Book Now" />
+    </form>
+
+    <div id="confirmationMessage" class="confirmation-message">
+      <h2>Booking Successful!</h2>
+      <p>Thank you for booking a hotel room.</p>
+    </div>
+  </body>
+</html>
